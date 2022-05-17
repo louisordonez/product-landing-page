@@ -6,27 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apple Music</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="assets/js/navBarIcon.js" defer></script>
   </head>
   <body>
     <div class="container">
       <header class="header" id="header">
         <!-- <img id="header-img" /> -->
-        <nav class="nav-bar" id="nav-bar">
-          <a href="#" class="nav-bar-logo"> Apple Music</a>
-          <!-- <a>Plans</a>
-          <a>About</a>
-          <a>Contact</a>
-          <a>Sign In</a> -->
+        <nav class="navbar" id="nav-bar">
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbtn"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
+          <a class="logo" href="#"
+            ><i class="fa-brands fa-apple"></i> Apple Music</a
+          >
+          <ul>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Plans</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+            <li>
+              <a href="#" class="nav-link sign-in-btn"
+                ><i class="fa-solid fa-user"></i> Sign In</a
+              >
+            </li>
+          </ul>
         </nav>
       </header>
-      <div>
+      <div style="background-color: white; height: 1500px; margin-top: 48px">
+        <h1>Fixed Top Navigation Bar</h1>
+        <h2>Scroll this page to see the effect</h2>
+        <h2>
+          The navigation bar will stay at the top of the page while scrolling
+        </h2>
+
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+      </div>
+      <!-- <div>
         <div class="video-container">
           <video id="video"></video>
         </div>
         <div class="form-container">
-          <form></form>
+          <form id="form"><input type="email" /></form>
         </div>
-      </div>
+      </div> -->
     </div>
   </body>
 </html>

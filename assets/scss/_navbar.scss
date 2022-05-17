@@ -1,39 +1,26 @@
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+@import "./variables";
+@import "./mixins";
+
+%default-line-height {
+  line-height: 48px;
 }
 
-body {
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-body {
-  background-color: #ffffff;
+%default-font-size {
+  font-size: 16px;
 }
 
 nav {
-  background: #2e2f2d;
+  background: $black;
   height: 48px;
   width: 100%;
   position: fixed;
   top: 0;
 }
 
-.logo, nav ul li, .checkbtn {
-  line-height: 48px;
-}
-
-nav ul li a, .checkbtn {
-  font-size: 16px;
-}
-
 .logo {
-  color: #ffffff;
+  color: $white;
   font-size: 16px;
+  @extend %default-line-height;
   padding: 0 32px;
 }
 
@@ -44,34 +31,37 @@ nav ul {
 
 nav ul li {
   display: inline-block;
+  @extend %default-line-height;
   margin: 0 8px;
 }
 
 nav ul li a {
-  color: #ffffff;
+  color: $white;
+  @extend %default-font-size;
   padding: 8px 16px;
 }
 
 .nav-link.active,
 .nav-link:hover {
-  color: #ea334b;
-  -webkit-transition: 0.5s;
+  color: $red;
   transition: 0.5s;
 }
 
 .sign-in-btn {
   border-radius: 4px;
-  background: #ea334b;
-}
+  background: $red;
 
-.sign-in-btn:hover {
-  color: #ffffff;
-  background-color: #ea334b;
+  &:hover {
+    color: $white;
+    background-color: $red;
+  }
 }
 
 .checkbtn {
-  color: #ffffff;
+  @extend %default-font-size;
+  color: $white;
   float: right;
+  @extend %default-line-height;
   margin-right: 32px;
   cursor: pointer;
   display: none;
@@ -85,27 +75,29 @@ nav ul li a {
   .checkbtn {
     display: block;
   }
+
   ul {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #2e2f2d;
+    background: $black;
     top: 48px;
     left: -100%;
     text-align: center;
-    -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
+
   nav ul li {
     display: block;
     margin: 16px 0;
     line-height: 32px;
   }
+
   nav ul li a {
-    font-size: 16px;
+    @extend %default-font-size;
   }
+
   #check:checked ~ ul {
     left: 0;
   }
 }
-/*# sourceMappingURL=styles.css.map */

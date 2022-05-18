@@ -27,8 +27,10 @@
           /></a>
           <ul>
             <li><a href="#" class="nav-link">About</a></li>
-            <li><a href="#" class="nav-link">Plans</a></li>
-            <li><a href="#" class="nav-link">FAQ</a></li>
+            <li><hr class="nav-hr" /></li>
+            <li><a href="#plans" class="nav-link">Plans</a></li>
+            <li><hr class="nav-hr" /></li>
+            <li><a href="#faq" class="nav-link">FAQ</a></li>
           </ul>
         </nav>
       </header>
@@ -49,40 +51,42 @@
             >
           </p>
         </div>
-        <div>
-          <div class="about">
-            <div class="about-logo">
-              <img src="assets/media/am-logo.png" />
-              <p>Apple Music</p>
-            </div>
-            <div class="about-text">
-              <h1>Discover new music everyday.</h1>
-              <a href="#" class="subscribe-btn">Subscribe</a>
-            </div>
+        <div class="about">
+          <div class="about-logo">
+            <img src="assets/media/am-logo.png" />
+            <p>Apple Music</p>
           </div>
-          <div class="video-container">
-            <div class="overlay"></div>
-            <video
-              id="video"
-              class="video"
-              src="assets/media/am.mp4"
-              type="video/mp4"
-              autoplay
-              loop
-              muted
-            >
-              Your browser does not support HTML video.
-            </video>
+          <div class="about-text">
+            <h1>Hear sound all around.</h1>
+            <a href="#" class="subscribe-btn">Subscribe</a>
           </div>
         </div>
-      </div>
-      <div class="plans">
-        <div class="subscribe">
-          <div class="form-container">
-            <form id="form"><input type="email" /></form>
+        <div class="video-container">
+          <div class="overlay vignette-shadow">
+            <p>Discover new music everyday.</p>
+          </div>
+          <video
+            id="video"
+            class="video"
+            src="assets/media/am.mp4"
+            type="video/mp4"
+            autoplay
+            loop
+            muted
+          >
+            Your browser does not support HTML video.
+          </video>
+        </div>
+        <div class="plans" id="plans">
+          Plans
+          <div class="subscribe">
+            <div class="form-container">
+              <form id="form"><input type="email" /></form>
+            </div>
           </div>
         </div>
-        <div class="footer">Hello World!</div>
+        <div class="faq" id="faq">FAQ</div>
+        <div class="footer">Footer</div>
       </div>
     </div>
   </body>

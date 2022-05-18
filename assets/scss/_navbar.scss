@@ -9,8 +9,16 @@
   font-size: 16px;
 }
 
+%default-nav-link-color {
+  color: $grey;
+}
+
+%default-nav-link-hover-color {
+  color: $white;
+}
+
 nav {
-  background: $black;
+  background: $dark-grey;
   height: $nav-default-height;
   width: 100%;
   position: fixed;
@@ -40,24 +48,33 @@ nav ul li {
 }
 
 nav ul li a {
-  color: $white;
+  color: $grey;
   @extend %default-font-size;
   padding: 8px 16px;
 }
 
 .nav-link:hover {
-  color: $red;
+  @extend %default-nav-link-hover-color;
   transition: 0.5s;
+}
+
+.nav-hr {
+  border: 1px solid $grey;
+  visibility: hidden;
 }
 
 .menu-btn {
   @extend %default-font-size;
-  color: $white;
+  @extend %default-nav-link-color;
   float: right;
   @extend %default-line-height;
   margin-right: 32px;
   cursor: pointer;
   display: none;
+
+  &:hover {
+    @extend %default-nav-link-hover-color;
+  }
 }
 
 #menu-btn {
@@ -73,22 +90,24 @@ nav ul li a {
     position: fixed;
     width: 100%;
     background: #000;
-    // margin-top: $nav-default-height;
+    margin-top: $nav-default-height;
     top: -100%;
-    text-align: center;
+    text-align: left;
     transition: all 0.5s;
   }
 
   nav ul li {
     display: block;
-    margin: 16px 0;
+    margin: 16px 16px;
     line-height: 32px;
-    margin-top: $nav-default-height;
   }
 
   nav ul li a {
     font-size: 16px;
-    padding: 16px 32px;
+  }
+
+  .nav-hr {
+    visibility: visible;
   }
 
   #menu-btn:checked ~ ul {

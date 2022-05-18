@@ -16,7 +16,7 @@ body {
 }
 
 .logo, nav ul li, .checkbtn {
-  line-height: 48px;
+  line-height: 64px;
 }
 
 nav ul li a, .checkbtn {
@@ -25,16 +25,21 @@ nav ul li a, .checkbtn {
 
 nav {
   background: #2e2f2d;
-  height: 48px;
+  height: 64px;
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 .logo {
   color: #ffffff;
   font-size: 16px;
   padding: 0 32px;
+}
+
+.logo > img {
+  height: 20%;
 }
 
 nav ul {
@@ -112,5 +117,13 @@ nav ul li a {
 .content {
   height: 100vh;
   margin-top: 48px;
+}
+
+.video {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 /*# sourceMappingURL=styles.css.map */

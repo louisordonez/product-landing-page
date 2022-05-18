@@ -2,7 +2,7 @@
 @import "./mixins";
 
 %default-line-height {
-  line-height: 48px;
+  line-height: 64px;
 }
 
 %default-font-size {
@@ -11,10 +11,11 @@
 
 nav {
   background: $black;
-  height: 48px;
+  height: 64px;
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 .logo {
@@ -22,6 +23,10 @@ nav {
   font-size: 16px;
   @extend %default-line-height;
   padding: 0 32px;
+
+  & > img {
+    height: 20%;
+  }
 }
 
 nav ul {

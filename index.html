@@ -18,13 +18,14 @@
   <body>
     <div class="container">
       <header class="header" id="header">
-        <!-- <img id="header-img" /> -->
         <nav class="navbar" id="nav-bar">
           <input type="checkbox" id="check" />
           <label for="check" class="checkbtn"
             ><i class="fa-solid fa-bars"></i
           ></label>
-          <a class="logo" href="#">Apple Music</a>
+          <a class="logo" href="#"
+            ><img id="header-img" src="assets/media/apple.png" /> Apple Music</a
+          >
           <ul>
             <!-- <i class="fa-brands fa-apple"></i>  -->
             <li><a href="#" class="nav-link">About</a></li>
@@ -38,9 +39,20 @@
         </nav>
       </header>
       <div class="content">
-        <div class="About">
+        <div class="about">
           <div class="video-container">
-            <video id="video"></video>
+            <video
+              id="video"
+              class="video"
+              src="assets/media/am.mp4"
+              type="video/mp4"
+              controls
+              autoplay
+              loop
+              muted
+            >
+              Your browser does not support HTML video.
+            </video>
           </div>
           <h1>Fixed Top Navigation Bar</h1>
           <h2>Scroll this page to see the effect</h2>

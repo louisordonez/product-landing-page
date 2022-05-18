@@ -124,6 +124,7 @@ nav ul li a {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  pointer-events: none;
 }
 
 .overlay {

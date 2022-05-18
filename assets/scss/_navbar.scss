@@ -2,7 +2,7 @@
 @import "./mixins";
 
 %default-line-height {
-  line-height: 64px;
+  line-height: 52px;
 }
 
 %default-font-size {
@@ -11,7 +11,7 @@
 
 nav {
   background: $black;
-  height: 64px;
+  height: $nav-default-height;
   width: 100%;
   position: fixed;
   top: 0;
@@ -19,13 +19,12 @@ nav {
 }
 
 .logo {
-  color: $white;
-  @extend %default-font-size;
   @extend %default-line-height;
   padding: 0 32px;
 
   & > img {
-    height: 20%;
+    margin-top: 14px;
+    height: 40%;
   }
 }
 
@@ -51,16 +50,6 @@ nav ul li a {
   transition: 0.5s;
 }
 
-.nav-link-btn {
-  border-radius: 4px;
-  background: $red;
-
-  &:hover {
-    color: $white;
-    background-color: $red;
-  }
-}
-
 .menu-btn {
   @extend %default-font-size;
   color: $white;
@@ -83,10 +72,9 @@ nav ul li a {
   ul {
     position: fixed;
     width: 100%;
-    height: 100vh;
-    background: $black;
-    top: 48px;
-    left: -100%;
+    background: #000;
+    // margin-top: $nav-default-height;
+    top: -100%;
     text-align: center;
     transition: all 0.5s;
   }
@@ -95,13 +83,17 @@ nav ul li a {
     display: block;
     margin: 16px 0;
     line-height: 32px;
+    margin-top: $nav-default-height;
   }
 
   nav ul li a {
     font-size: 16px;
+    padding: 16px 32px;
   }
 
   #menu-btn:checked ~ ul {
-    left: 0;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
   }
 }

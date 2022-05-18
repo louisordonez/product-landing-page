@@ -1,0 +1,36 @@
+.about {
+  margin-top: 32px;
+}
+
+%center {
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+}
+
+.about-logo {
+  @extend %center;
+
+  & > img {
+    height: 8vh;
+  }
+}
+
+.about-text {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  @extend %center;
+
+  & h1 {
+    font-size: 6vh;
+    margin: 24px;
+    margin-bottom: 48px;
+  }
+
+  & > .subscribe-btn {
+    color: $white;
+    background: $red;
+    border-radius: 24px;
+    padding: 16px 24px;
+  }
+}

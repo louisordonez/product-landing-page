@@ -1,6 +1,20 @@
-.video {
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  pointer-events: none;
+.video-container {
+  position: relative;
+  margin-top: $nav-default-height;
+
+  > .video {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+  }
+
+  > .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 }

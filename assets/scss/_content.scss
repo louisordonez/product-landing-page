@@ -1,4 +1,50 @@
 .content {
-  // height: 100vh;
-  margin-top: 64px;
+  margin-top: $nav-default-height;
+}
+
+.right {
+  text-align: right;
+}
+
+.subscribe-container {
+  display: flex;
+}
+
+.subscribe-box {
+  margin-top: 24px;
+  margin: 16px;
+  width: 100%;
+  justify-content: space-between;
+
+  & > p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.small-subscribe-btn {
+  font-size: 14px;
+  color: $white;
+  background: $red;
+  border-radius: 24px;
+  padding: 8px 16px;
+}
+
+.banner {
+  width: 100%;
+  background-color: $grey;
+  padding: 16px;
+
+  & > p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  & p > a {
+    color: $blue;
+  }
+
+  & p > a:hover {
+    text-decoration: underline;
+  }
 }

@@ -19,7 +19,7 @@ body {
   line-height: 64px;
 }
 
-nav ul li a, .checkbtn {
+.logo, nav ul li a, .checkbtn {
   font-size: 16px;
 }
 
@@ -34,7 +34,6 @@ nav {
 
 .logo {
   color: #ffffff;
-  font-size: 16px;
   padding: 0 32px;
 }
 
@@ -125,6 +124,30 @@ nav ul li a {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.overlay p {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  font-size: 5vw;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 16px;
+  margin-top: -60%;
+  text-align: center;
+  z-index: 0;
 }
 
 .footer {

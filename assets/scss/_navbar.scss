@@ -20,7 +20,7 @@ nav {
 
 .logo {
   color: $white;
-  font-size: 16px;
+  @extend %default-font-size;
   @extend %default-line-height;
   padding: 0 32px;
 

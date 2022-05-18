@@ -126,4 +126,9 @@ nav ul li a {
   -o-object-position: center;
      object-position: center;
 }
+
+.footer {
+  margin-top: 16px;
+  background-color: #f5f5f7;
+}
 /*# sourceMappingURL=styles.css.map */

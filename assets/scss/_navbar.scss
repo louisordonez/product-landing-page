@@ -52,7 +52,7 @@ nav ul li a {
   transition: 0.5s;
 }
 
-.sign-in-btn {
+.nav-link-btn {
   border-radius: 4px;
   background: $red;
 
@@ -62,7 +62,7 @@ nav ul li a {
   }
 }
 
-.checkbtn {
+.menu-btn {
   @extend %default-font-size;
   color: $white;
   float: right;
@@ -72,12 +72,12 @@ nav ul li a {
   display: none;
 }
 
-#check {
+#menu-btn {
   display: none;
 }
 
 @media (max-width: 768px) {
-  .checkbtn {
+  .menu-btn {
     display: block;
   }
 
@@ -102,7 +102,7 @@ nav ul li a {
     font-size: 16px;
   }
 
-  #check:checked ~ ul {
+  #menu-btn:checked ~ ul {
     left: 0;
   }
 }

@@ -15,20 +15,20 @@ body {
   background-color: #ffffff;
 }
 
-nav {
-  background: #2e2f2d;
-  height: 48px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-}
-
 .logo, nav ul li, .checkbtn {
   line-height: 48px;
 }
 
 nav ul li a, .checkbtn {
   font-size: 16px;
+}
+
+nav {
+  background: #2e2f2d;
+  height: 48px;
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
 
 .logo {
@@ -107,5 +107,10 @@ nav ul li a {
   #check:checked ~ ul {
     left: 0;
   }
+}
+
+.content {
+  height: 100vh;
+  margin-top: 48px;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -152,11 +152,11 @@ nav ul li a {
   text-align: center;
 }
 
-.banner p > a {
+.banner > p > a {
   color: #0066cc;
 }
 
-.banner p > a:hover {
+.banner > p > a:hover {
   text-decoration: underline;
 }
 
@@ -181,7 +181,7 @@ nav ul li a {
   margin-bottom: 16px;
 }
 
-.about-text h1 {
+.about-text > h1 {
   font-size: 6vh;
   margin: 24px;
   margin-bottom: 48px;

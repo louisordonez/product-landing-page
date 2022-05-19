@@ -1,3 +1,6 @@
+@import "./variables";
+@import "./mixins";
+
 .content {
   margin-top: $default-margin-top-height;
 }
@@ -27,6 +30,10 @@
   background: $red;
   border-radius: 24px;
   padding: 8px 16px;
+
+  &:hover {
+    @include subscribe-btn-hover;
+  }
 }
 
 .banner {
@@ -40,10 +47,10 @@
 
     > a {
       color: $blue;
-    }
 
-    > a:hover {
-      text-decoration: underline;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }

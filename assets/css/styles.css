@@ -136,6 +136,10 @@ nav ul li a {
   padding: 8px 16px;
 }
 
+.small-subscribe-btn:hover {
+  color: #febdc5;
+}
+
 .banner {
   width: 100%;
   background-color: #f5f5f7;
@@ -168,7 +172,7 @@ nav ul li a {
 }
 
 .about-logo > img {
-  height: 5vmax;
+  height: 6.2vmax;
 }
 
 .about-text {
@@ -187,6 +191,10 @@ nav ul li a {
   background: #ea334b;
   border-radius: 24px;
   padding: 16px 24px;
+}
+
+.about-text > .subscribe-btn:hover {
+  color: #febdc5;
 }
 
 .video-container {
@@ -293,7 +301,7 @@ nav ul li a {
 
 .plans-text > p {
   margin: 16px;
-  font-size: 3vh;
+  font-size: 24px;
   font-weight: 600;
 }
 
@@ -378,15 +386,8 @@ nav ul li a {
   text-align: left;
 }
 
-.subscribe-container {
-  margin-top: 48px;
-}
-
-.subscribe-text {
-  text-align: center;
-}
-
 .form-container {
+  margin-top: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,8 +399,67 @@ nav ul li a {
           align-items: center;
 }
 
-.submit-btn {
+.form-container > div {
+  padding: 64px;
+  width: 90vw;
+  background-color: #ffffff;
   text-align: center;
+  border-radius: 16px;
+}
+
+.subscribe-text {
+  text-align: center;
+}
+
+.subscribe-text > img {
+  height: 6.2vmax;
+  margin-bottom: 16px;
+}
+
+.subscribe-text > h1 {
+  font-size: 4.2vmax;
+}
+
+.subscribe-text > p {
+  margin-top: 12px;
+  margin-bottom: 32px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.form-elements > input[type="email"] {
+  width: 80%;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+.submit-btn {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.submit-btn > input {
+  color: #ffffff;
+  background: #ea334b;
+  border-radius: 24px;
+  padding: 16px 24px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn > input[type="submit"]:hover {
+  color: #febdc5;
+}
+
+#subscribe {
+  margin-bottom: 16px;
 }
 
 .faq-container {

@@ -3,3 +3,14 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin subscribe-btn {
+  color: $white;
+  background: $red;
+  border-radius: 24px;
+  padding: 16px 24px;
+}
+
+@mixin subscribe-btn-hover {
+  color: $light-red;
+}

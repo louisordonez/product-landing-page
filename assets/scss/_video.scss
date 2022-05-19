@@ -1,3 +1,6 @@
+@import "./variables";
+@import "./mixins";
+
 .video-container {
   position: relative;
   margin-top: $default-margin-top-height;

@@ -1,17 +1,68 @@
+@import "./variables";
 @import "./mixins";
 
-.subscribe-container {
+.form-container {
   margin-top: $default-margin-top-height;
+  @include flex-center-items;
+
+  > div {
+    padding: 64px;
+    width: 90vw;
+    background-color: $white;
+    text-align: center;
+    border-radius: 16px;
+  }
 }
 
 .subscribe-text {
   text-align: center;
+
+  > img {
+    height: $default-am-logo-img-size;
+    margin-bottom: 16px;
+  }
+
+  > h1 {
+    font-size: $default-h1-font-size;
+  }
+
+  > p {
+    margin-top: 12px;
+    margin-bottom: 32px;
+    font-size: $default-p-font-size;
+    font-weight: 600;
+  }
 }
 
-.form-container {
-  @include flex-center-items;
+.form-elements {
+  > input[type="email"] {
+    width: 80%;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
 }
 
 .submit-btn {
+  margin-top: 32px;
   text-align: center;
+
+  > input {
+    @include subscribe-btn;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  > input[type="submit"]:hover {
+    @include subscribe-btn-hover;
+  }
+}
+
+#subscribe {
+  margin-bottom: 16px;
 }

@@ -168,7 +168,7 @@ nav ul li a {
 }
 
 .about-logo > img {
-  height: 12vh;
+  height: 6vmax;
 }
 
 .about-text {
@@ -177,7 +177,7 @@ nav ul li a {
 }
 
 .about-text > h1 {
-  font-size: 6vh;
+  font-size: 4.2vmax;
   margin: 24px;
   margin-bottom: 48px;
 }
@@ -213,7 +213,7 @@ nav ul li a {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.video-container > .overlay > p {
+.video-container > .overlay > div > p {
   color: #ffffff;
   font-size: 6vw;
   color: #ffffff;
@@ -221,6 +221,18 @@ nav ul li a {
   padding: 16px;
   text-align: center;
   margin-top: 26%;
+}
+
+.video-container > .overlay > div > button {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 2.6vmax;
+  color: #ffffff;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
 }
 
 .vignette-shadow {
@@ -237,7 +249,7 @@ nav ul li a {
 }
 
 .plans-container > h1 {
-  font-size: 6vh;
+  font-size: 4.2vmax;
 }
 
 .plans-container > p {
@@ -263,7 +275,7 @@ nav ul li a {
   display: grid;
   -ms-grid-columns: auto auto auto auto;
       grid-template-columns: auto auto auto auto;
-  width: 80vh;
+  width: 50vmax;
   overflow: auto;
 }
 

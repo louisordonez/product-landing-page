@@ -1,13 +1,15 @@
 @import "./variables";
 @import "./mixins";
 
-.plans {
+.plans-container {
   margin-top: $default-margin-top-height;
+  padding-bottom: $default-padding-bottom-height;
+  background-color: $light-grey;
+  text-align: center;
 }
 
-.plans-container {
-  text-align: center;
-
+.plans-text {
+  padding-top: $default-padding-top-height;
   > h1 {
     font-size: $default-h1-font-size;
   }

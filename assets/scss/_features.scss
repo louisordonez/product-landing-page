@@ -1,0 +1,27 @@
+@import "./mixins";
+
+.features-container {
+  text-align: center;
+}
+
+.features-text-container {
+  padding-top: $default-padding-top-height;
+  @include flex-center-items;
+}
+
+.features-text {
+  width: 80vw;
+
+  > h1 {
+    text-align: center;
+    font-size: $default-h1-font-size;
+  }
+}
+
+.features-img {
+  > img {
+    object-fit: cover;
+    width: 75vw;
+  }
+  margin-top: $default-margin-top-height;
+}

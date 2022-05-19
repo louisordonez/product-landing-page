@@ -553,12 +553,203 @@ nav ul li a {
   }
 }
 
-.a-link {
+.a-link, .home-link {
   color: #0066cc;
 }
 
-.a-link:hover {
+.a-link:hover, .home-link:hover {
   text-decoration: underline;
+}
+
+.form-container {
+  margin-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-container > div {
+  padding: 64px;
+  width: 90vw;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.subscribe-text {
+  text-align: center;
+}
+
+.subscribe-text > img {
+  height: 6.2vmax;
+  margin-bottom: 16px;
+}
+
+.subscribe-text > h1 {
+  font-size: 4.2vmax;
+}
+
+.subscribe-text > p {
+  margin-top: 12px;
+  margin-bottom: 32px;
+  font-size: 3.2vmax;
+  font-weight: 600;
+}
+
+.form-elements > input[type="email"] {
+  width: 80%;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+.submit-btn {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.submit-btn > input {
+  color: #ffffff;
+  background: #ea334b;
+  border-radius: 24px;
+  padding: 16px 24px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn > input[type="submit"]:hover {
+  color: #febdc5;
+}
+
+#subscribe {
+  margin-bottom: 16px;
+}
+
+.faq-container {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.faq-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faq-text > h1 {
+  font-size: 4.2vmax;
+  margin-bottom: 24px;
+}
+
+.faq-qa-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faq-qa-elements {
+  width: 100vh;
+  margin-top: 32px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.faq-qa-elements > h3 {
+  text-align: left;
+  font-size: 24px;
+}
+
+.faq-qa-elements > p {
+  margin-top: 24px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.faq-hr {
+  margin-top: 24px;
+  border: 0.5px solid #d8d7da;
+}
+
+@media (max-width: 320px) {
+  .faq-qa-elements > h3 {
+    font-size: 10px;
+  }
+  .faq-qa-elements > p {
+    font-size: 10px;
+  }
+}
+
+.a-link, .home-link {
+  color: #0066cc;
+}
+
+.a-link:hover, .home-link:hover {
+  text-decoration: underline;
+}
+
+.success-container {
+  margin-top: 48px;
+}
+
+.success-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.success-text {
+  background-color: #f5f5f7;
+  margin-top: 48px;
+  width: 80vw;
+  padding: 64px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.success-text > h1 {
+  font-size: 4.2vmax;
+  color: #299c44;
+}
+
+.success-text > p {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-size: 2vmax;
+  font-weight: 600;
+}
+
+.home-link {
+  font-size: 1.8vmax;
 }
 
 * {

@@ -1,0 +1,38 @@
+@import "./variables";
+@import "./mixins";
+@import "./subscribe";
+@import "./faq";
+
+.success-container {
+  margin-top: $default-margin-top-height;
+}
+
+.success-text-container {
+  @include flex-center-items;
+}
+
+.success-text {
+  background-color: $light-grey;
+  margin-top: $default-margin-top-height;
+  width: 80vw;
+  padding: 64px;
+  border-radius: 16px;
+  text-align: center;
+
+  > h1 {
+    font-size: $default-h1-font-size;
+    color: $green;
+  }
+
+  > p {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-size: 2vmax;
+    font-weight: 600;
+  }
+}
+
+.home-link {
+  @extend .a-link;
+  font-size: 1.8vmax;
+}

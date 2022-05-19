@@ -314,7 +314,7 @@ nav ul li a {
   display: grid;
   -ms-grid-columns: auto auto auto auto;
       grid-template-columns: auto auto auto auto;
-  width: 50vmax;
+  width: 61vmax;
   overflow: auto;
 }
 

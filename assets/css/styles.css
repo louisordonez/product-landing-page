@@ -301,7 +301,7 @@ nav ul li a {
 
 .plans-text > p {
   margin: 16px;
-  font-size: 24px;
+  font-size: 3.2vmax;
   font-weight: 600;
 }
 
@@ -386,6 +386,31 @@ nav ul li a {
   text-align: left;
 }
 
+@media (max-width: 320px) {
+  .grid-plans > div:nth-child(2),
+  .grid-plans div:nth-child(3),
+  .grid-plans div:nth-child(4) {
+    font-size: 10px;
+  }
+  .grid-plans > div:nth-child(5),
+  .grid-plans div:nth-child(9),
+  .grid-plans div:nth-child(13),
+  .grid-plans div:nth-child(17),
+  .grid-plans div:nth-child(21),
+  .grid-plans div:nth-child(25),
+  .grid-plans div:nth-child(29),
+  .grid-plans div:nth-child(33),
+  .grid-plans div:nth-child(37),
+  .grid-plans div:nth-child(41),
+  .grid-plans div:nth-child(45),
+  .grid-plans div:nth-child(49),
+  .grid-plans div:nth-child(53),
+  .grid-plans div:nth-child(57),
+  .grid-plans div:nth-child(61) {
+    font-size: 10px;
+  }
+}
+
 .form-container {
   margin-top: 48px;
   display: -webkit-box;
@@ -423,7 +448,7 @@ nav ul li a {
 .subscribe-text > p {
   margin-top: 12px;
   margin-bottom: 32px;
-  font-size: 24px;
+  font-size: 3.2vmax;
   font-weight: 600;
 }
 
@@ -464,9 +489,10 @@ nav ul li a {
 
 .faq-container {
   margin-top: 48px;
+  margin-bottom: 48px;
 }
 
-.faq-container > div {
+.faq-text-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -476,6 +502,63 @@ nav ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.faq-text > h1 {
+  font-size: 4.2vmax;
+  margin-bottom: 24px;
+}
+
+.faq-qa-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faq-qa-elements {
+  width: 100vh;
+  margin-top: 32px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.faq-qa-elements > h3 {
+  text-align: left;
+  font-size: 24px;
+}
+
+.faq-qa-elements > p {
+  margin-top: 24px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.faq-hr {
+  margin-top: 24px;
+  border: 0.5px solid #d8d7da;
+}
+
+@media (max-width: 320px) {
+  .faq-qa-elements > h3 {
+    font-size: 10px;
+  }
+  .faq-qa-elements > p {
+    font-size: 10px;
+  }
+}
+
+.a-link {
+  color: #0066cc;
+}
+
+.a-link:hover {
+  text-decoration: underline;
 }
 
 * {

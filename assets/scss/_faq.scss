@@ -1,7 +1,7 @@
 @import "./mixins";
 
 .faq-container {
-  margin-top: $default-nav-height;
+  margin-top: $default-margin-top-height;
 
   > div {
     @include flex-center-items;

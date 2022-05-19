@@ -1,0 +1,17 @@
+@import "./mixins";
+
+.subscribe-container {
+  margin-top: $default-nav-height;
+}
+
+.subscribe-text {
+  text-align: center;
+}
+
+.form-container {
+  @include flex-center-items;
+}
+
+.submit-btn {
+  text-align: center;
+}

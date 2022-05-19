@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./mixins";
 
 .plans {
   margin-top: $default-nav-height;
@@ -19,9 +20,7 @@
 }
 
 .grid-plans-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center-items;
 }
 
 .grid-plans {

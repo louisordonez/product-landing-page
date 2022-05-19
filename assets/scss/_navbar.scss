@@ -1,5 +1,4 @@
 @import "./variables";
-@import "./mixins";
 
 %default-line-height {
   line-height: 52px;
@@ -19,7 +18,7 @@
 
 nav {
   background: $dark-grey;
-  height: $nav-default-height;
+  height: $default-nav-height;
   width: 100%;
   position: fixed;
   top: 0;
@@ -90,7 +89,7 @@ nav ul li a {
     position: fixed;
     width: 100%;
     background: #000;
-    margin-top: $nav-default-height;
+    margin-top: $default-nav-height;
     top: -100%;
     text-align: left;
     transition: all 0.5s;

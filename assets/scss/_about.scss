@@ -11,7 +11,7 @@
 .about-logo {
   @extend %center;
   > img {
-    height: 8vh;
+    height: 12vh;
   }
 }
 
@@ -21,7 +21,7 @@
   @extend %center;
 
   > h1 {
-    font-size: 6vh;
+    font-size: $default-h1-font-size;
     margin: 24px;
     margin-bottom: 48px;
   }

@@ -1,0 +1,85 @@
+@import "./variables";
+
+.plans {
+  margin-top: $default-nav-height;
+}
+
+.plans-container {
+  text-align: center;
+
+  > h1 {
+    font-size: $default-h1-font-size;
+  }
+
+  > p {
+    margin: 16px;
+    font-size: 3vh;
+    font-weight: 600;
+  }
+}
+
+.grid-plans-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-plans {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 80vh;
+  overflow: auto;
+}
+
+%grid-font-style {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.grid-plans {
+  > div {
+    border-top: 1px solid $default-table-border-color;
+    text-align: center;
+    padding: 18px 8px;
+  }
+
+  > div:nth-child(1),
+  div:nth-child(2),
+  div:nth-child(3),
+  div:nth-child(4) {
+    border-top: none;
+    text-align: center;
+  }
+
+  > div:nth-child(5),
+  div:nth-child(6),
+  div:nth-child(7),
+  div:nth-child(8) {
+    border-top: 2px solid black;
+  }
+
+  > div:nth-child(2),
+  div:nth-child(3),
+  div:nth-child(4) {
+    @extend %grid-font-style;
+  }
+
+  > div:nth-child(5),
+  div:nth-child(9),
+  div:nth-child(13),
+  div:nth-child(17),
+  div:nth-child(21),
+  div:nth-child(25),
+  div:nth-child(29),
+  div:nth-child(33),
+  div:nth-child(37),
+  div:nth-child(41),
+  div:nth-child(45),
+  div:nth-child(49),
+  div:nth-child(53),
+  div:nth-child(57),
+  div:nth-child(61) {
+    text-align: left;
+    @extend %grid-font-style;
+  }
+}

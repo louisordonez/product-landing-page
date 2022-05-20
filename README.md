@@ -1,5 +1,5 @@
 # product-landing-page
-This project is a web page application that showcases Apple Music.
+This project is a web application that showcases Apple Music.
 
 ## Tech Stack
 - HTML

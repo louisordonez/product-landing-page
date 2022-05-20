@@ -26,5 +26,11 @@ body {
 
 .dark-mode {
   background-color: black;
+  transition: background-color 0.5s;
   color: white;
+}
+
+.dark-mode-container {
+  background-color: $dark-grey;
+  transition: background-color 0.5s;
 }

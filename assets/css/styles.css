@@ -780,6 +780,14 @@ body {
 
 .dark-mode {
   background-color: black;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
   color: white;
+}
+
+.dark-mode-container {
+  background-color: #424245;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 /*# sourceMappingURL=styles.css.map */

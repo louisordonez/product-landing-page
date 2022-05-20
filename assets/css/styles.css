@@ -800,7 +800,7 @@ body {
 
 .dark-mode {
   background-color: black;
-  color: white;
+  color: #ffffff;
 }
 
 .dark-mode-container {
@@ -808,11 +808,15 @@ body {
 }
 
 .dark-mode-card {
-  background-color: #424245 !important;
+  background-color: #333 !important;
 }
 
 .dark-mode-input {
   background-color: #1d1d1f;
   color: #ffffff;
+}
+
+.dark-mode-p {
+  color: #a1a1a6 !important;
 }
 /*# sourceMappingURL=styles.css.map */

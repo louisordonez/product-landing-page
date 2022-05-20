@@ -3,7 +3,7 @@ function darkMode() {
   bannerDarkMode();
   plansDarkMode();
   subscribeDarkMode();
-  inputDarkMode();
+  faqDarkMode();
   successPageDarkMode();
 }
 
@@ -33,13 +33,20 @@ function subscribeDarkMode() {
   if (element) {
     element.classList.toggle("dark-mode-card");
   }
+
+  function inputDarkMode() {
+    let element = document.querySelector(".email");
+    if (element) {
+      element.classList.toggle("dark-mode-input");
+    }
+  }
+
+  inputDarkMode();
 }
 
-function inputDarkMode() {
-  let element = document.querySelector(".email");
-  if (element) {
-    element.classList.toggle("dark-mode-input");
-  }
+function faqDarkMode() {
+  let element = document.querySelectorAll(".faq-qa-elements > p");
+  element.forEach((element) => element.classList.toggle("dark-mode-p"));
 }
 
 function successPageDarkMode() {

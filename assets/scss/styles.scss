@@ -30,7 +30,7 @@ body {
 
 .dark-mode {
   background-color: black;
-  color: white;
+  color: $white;
 }
 
 .dark-mode-container {
@@ -38,10 +38,14 @@ body {
 }
 
 .dark-mode-card {
-  background-color: $dark-grey !important;
+  background-color: $dark-mode-card-grey !important;
 }
 
 .dark-mode-input {
   background-color: $black;
   color: $white;
+}
+
+.dark-mode-p {
+  color: $dark-mode-p-grey !important;
 }

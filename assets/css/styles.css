@@ -666,6 +666,10 @@ nav ul li a {
   font-size: 1.8vmax;
 }
 
+.fade {
+  transition: background-color 1s;
+}
+
 .dark-mode-toggle {
   border: none;
   background-color: transparent;
@@ -674,10 +678,6 @@ nav ul li a {
 }
 .dark-mode-toggle > img {
   height: 20px;
-}
-
-.fade {
-  transition: background-color 1s;
 }
 
 .dark-mode {

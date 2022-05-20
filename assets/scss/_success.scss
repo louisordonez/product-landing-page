@@ -36,13 +36,3 @@
   @extend .a-link;
   font-size: 1.8vmax;
 }
-
-.dark-mode-toggle {
-  border: none;
-  background-color: transparent;
-  outline: none;
-  cursor: pointer;
-  > img {
-    height: 20px;
-  }
-}

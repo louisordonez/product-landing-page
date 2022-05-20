@@ -5,6 +5,16 @@
   transition: background-color 1s;
 }
 
+.dark-mode-toggle {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  > img {
+    height: 20px;
+  }
+}
+
 .dark-mode {
   background-color: black;
   color: $white;

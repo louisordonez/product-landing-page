@@ -1,0 +1,28 @@
+@import "./variables";
+@import "./mixins";
+
+.fade {
+  transition: background-color 1s;
+}
+
+.dark-mode {
+  background-color: black;
+  color: $white;
+}
+
+.dark-mode-container {
+  background-color: $black;
+}
+
+.dark-mode-card {
+  background-color: $dark-mode-card-grey !important;
+}
+
+.dark-mode-input {
+  background-color: $black;
+  color: $white;
+}
+
+.dark-mode-p {
+  color: $dark-mode-p-grey !important;
+}

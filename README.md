@@ -1,5 +1,9 @@
 # product-landing-page
+This project is a web page application that showcases Apple Music.
 
-https://louisordonez.github.io/product-landing-page/
+## Tech Stack
+- HTML
+- SCSS
+- JavaScript
 
-This project is a web page application built using HTML and SCSS that showcases Apple Music.
+#### Live Demo: https://louisordonez.github.io/product-landing-page/

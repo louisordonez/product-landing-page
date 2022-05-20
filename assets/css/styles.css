@@ -274,14 +274,29 @@ nav ul li a {
   font-size: 4.2vmax;
 }
 
+.features-img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .features-img {
-  margin-top: 48px;
+  padding-top: 24px;
+  margin: 2.5rem;
 }
 
 .features-img > img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 75vw;
+  width: 20vmax;
 }
 
 .plans-container {

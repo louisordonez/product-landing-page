@@ -19,10 +19,18 @@
   }
 }
 
+.features-img-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
 .features-img {
+  padding-top: 24px;
+  margin: 2.5rem;
   > img {
     object-fit: cover;
-    width: 75vw;
+    width: 20vmax;
   }
-  margin-top: $default-margin-top-height;
 }

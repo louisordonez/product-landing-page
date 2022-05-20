@@ -365,7 +365,7 @@ nav ul li a {
 .grid-plans div:nth-child(6),
 .grid-plans div:nth-child(7),
 .grid-plans div:nth-child(8) {
-  border-top: 2px solid black;
+  border-top: none;
 }
 
 .grid-plans > div:nth-child(5),
@@ -778,16 +778,26 @@ body {
   background-color: #ffffff;
 }
 
+.fade {
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
 .dark-mode {
   background-color: black;
-  -webkit-transition: background-color 0.5s;
-  transition: background-color 0.5s;
   color: white;
 }
 
 .dark-mode-container {
-  background-color: #424245;
-  -webkit-transition: background-color 0.5s;
-  transition: background-color 0.5s;
+  background-color: #1d1d1f;
+}
+
+.dark-mode-card {
+  background-color: #424245 !important;
+}
+
+.dark-mode-input {
+  background-color: #1d1d1f;
+  color: #ffffff;
 }
 /*# sourceMappingURL=styles.css.map */

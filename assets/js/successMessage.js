@@ -6,6 +6,7 @@
   console.log(domName);
 
   if (domName) {
-    domName.textContent = "The email" + email + " will be notified.";
+    domName.textContent =
+      "The email " + email + " will be notified when it becomes available.";
   }
 })();

@@ -270,12 +270,12 @@ nav ul li a {
 
 .features-img {
   padding-top: 24px;
-  margin: 3.3rem;
+  margin: 2.7rem;
 }
 .features-img > img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 20vmax;
+  width: 27vmax;
 }
 
 .plans-container {

@@ -7,6 +7,6 @@
 
   if (domName) {
     domName.textContent =
-      "The email " + email + " will be notified when it becomes available.";
+      "The email " + email + " will be notified once it becomes available.";
   }
 })();

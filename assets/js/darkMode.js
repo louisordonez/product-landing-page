@@ -22,6 +22,7 @@ function darkMode() {
     email.classList.toggle("dark-mode-input");
     pElement.forEach((pElement) => pElement.classList.toggle("dark-mode-p"));
   } else if (successText) {
-    successText.classList.toggle("dark-mode-container");
+    body.classList.toggle("dark-mode");
+    successText.classList.toggle("dark-mode-input");
   }
 }

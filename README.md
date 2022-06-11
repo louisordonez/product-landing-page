@@ -1,6 +1,6 @@
 # product-landing-page
 
-![Screenshot](./assets/images/screenshot.png)
+![Screenshot](./assets/media/screenshot.png)
 
 This project is a web application that showcases Apple Music.
 
